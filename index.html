@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8">
+		<title>Lingo</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	</head>
+	<body>
+		<audio id="audio"></audio>
+		<header id="header">
+			<div class="dropdown">
+				<div class="cog">
+					<i class="fas fa-cog fa-3x"></i>
+					<div class="dropdownMenu">
+						<div class="titleMenu">
+							<p>STEM</p>
+						</div>
+						<div class="buttonMenu">
+							<button id="buttonMan" class="active" onclick="changeVoice('man')">Man</button>
+							<button id="buttonVrouw" onclick="changeVoice('vrouw')">Vrouw</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="title">
+				<h1 id="title">Lingo</h1>
+			</div>
+			<div>
+				<button id="startButton" onclick="startGame()">PLAY</button>
+			</div>
+		</header>
+		<footer id="footer">
+			<div class="timer">
+				<p id="timerText"></p>
+			</div>		
+		</footer>
+		<script src="js/javascript.js"></script>
+		<script src="js/lingo-nl.js"></script>
+	</body>
+</html>
